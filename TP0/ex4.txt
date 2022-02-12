@@ -1,0 +1,22 @@
+////////HTML//////
+<body>
+  <button onclick=" incrementClick()"> Clique-moi pour compter ! </button>
+  <p id="calc"> </p>
+   <button onclick="resetCounter()">Remettre le compteur a 0  </button>
+</body>
+
+/////////JS////////
+var counterVal = 0;
+
+function incrementClick() {
+    updateDisplay(++counterVal);
+}
+
+function resetCounter() {
+    counterVal = 0;
+    updateDisplay(counterVal);
+}
+
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}

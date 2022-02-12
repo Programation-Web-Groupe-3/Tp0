@@ -1,0 +1,15 @@
+///////////HTML///////////
+<body>
+<h1>TABLE DE MULTIPLICATION<h1>
+  <button onclick="calcule()"> cliquer moi</button>
+  <p id="calc"> </p>
+</body>
+
+//////////////JS/////////
+function calcule(){
+  var x =prompt("saisir lentier :  ")
+    for (var i=1;i <= 10; i++){
+    var resultat = x*i;
+document.getElementById("calc").innerHTML=(" * " + i + " = " + resultat);
+}
+}
